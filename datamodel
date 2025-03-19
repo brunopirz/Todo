@@ -1,0 +1,53 @@
+📊 Modelo de Dados
+Estrutura de Dados no Firestore
+1. Coleção: Users
+interface User {
+  uid: string;           // ID único do Firebase
+  email: string;         // Email do usuário
+  displayName: string;   // Nome de exibição
+  photoURL?: string;     // URL da foto de perfil
+  createdAt: Date;       // Data de criação
+}
+
+                    
+                        
+                    
+                
+2. Coleção: Lists
+interface List {
+  id: string;            // ID único da lista
+  userId: string;        // Referência ao usuário
+  title: string;         // Título da lista
+  color: string;         // Cor da lista
+  createdAt: Date;       // Data de criação
+  isDefault?: boolean;   // Lista padrão do sistema
+}
+
+                    
+                        
+                    
+                
+3. Coleção: Tasks
+interface Task {
+  id: string;            // ID único da tarefa
+  listId: string;        // Lista à qual pertence
+  userId: string;        // Usuário criador
+  title: string;         // Título da tarefa
+  notes?: string;        // Anotações
+  dueDate?: Date;        // Data de vencimento
+  reminderDate?: Date;   // Data de lembrete
+  completed: boolean;    // Status de conclusão
+  important: boolean;    // Marcação de importância
+  steps?: TaskStep[];    // Subtarefas
+  createdAt: Date;       // Data de criação
+  completedAt?: Date;    // Data de conclusão
+}
+
+interface TaskStep {
+  id: string;            // ID único do passo
+  title: string;         // Título do passo
+  completed: boolean;    // Status de conclusão
+}
+
+                    
+                        
