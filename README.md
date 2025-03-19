@@ -1,7 +1,7 @@
 # To-do
 A clean and open source task manager
 
-# 🎯 Visão Geral do Projeto
+## 🎯 Visão Geral do Projeto
 
 🏗️ Arquitetura do Sistema
 Visão Arquitetural
@@ -25,7 +25,7 @@ graph TD
 
                     
                 
-🔐 Modelo de Autenticação
+## 🔐 Modelo de Autenticação
 Fluxo de Autenticação
 
 Login com Google
@@ -42,14 +42,14 @@ Tipos de Usuário
 Usuário Padrão: Acesso completo às próprias listas e tarefas
 Usuário Convidado: Acesso limitado (implementação futura)
 
-# Gerenciamento de Listas
+## Gerenciamento de Listas
 
 Criar listas personalizadas
 Editar listas
 Excluir listas
 Listas padrão (Meu Dia, Importante, Planejado)
 
-# Gerenciamento de Tarefas
+## Gerenciamento de Tarefas
 
 Criar tarefas
 Editar tarefas
@@ -59,9 +59,9 @@ Definir data de vencimento
 Adicionar lembretes
 Marcar como importante
 
-# 🔧 Configuração do Ambiente
+## 🔧 Configuração do Ambiente
 Variáveis de Ambiente
-Arquivo .env:
+**Arquivo .env:**
 ```
 REACT_APP_FIREBASE_API_KEY=
 REACT_APP_FIREBASE_AUTH_DOMAIN=
@@ -71,22 +71,28 @@ REACT_APP_FIREBASE_MESSAGING_SENDER_ID=
 REACT_APP_FIREBASE_APP_ID=
 ```
                  
-# Instalação
-# Clonar repositório
-```git clone https://github.com/seu-usuario/microsoft-todo-clone.git```
+## Instalação
+**Clonar repositório**
+```
+git clone https://github.com/seu-usuario/microsoft-todo-clone.git
+```
 
-# Instalar dependências
+## Instalar dependências
+```
 cd todo
 npm install
+```
 
-# Configurar Firebase
-# Adicionar credenciais no .env
+## Configurar Firebase
+**Adicionar credenciais no .env**
 
-# Iniciar desenvolvimento
-```npm start```
+## Iniciar desenvolvimento
+```
+npm start
+```
 
                 
-#🧪 Estratégia de Testes
+## 🧪 Estratégia de Testes
 Tipos de Testes
 
 Testes Unitários (Jest)
@@ -95,14 +101,18 @@ Testes de Integração
 Cobertura de Código
 
 Comandos de Teste
-# Rodar testes
-```npm test```
+### Rodar testes
+```
+npm test
+```
 
-# Cobertura de testes
-```npm run test:coverage```
+### Cobertura de testes
+```
+npm run test:coverage
+```
 
                     
-#🚢 Deploy
+##🚢 Deploy
 Plataformas Suportadas
 
 Firebase Hosting
@@ -110,16 +120,16 @@ Vercel
 Netlify
 
 Comandos de Deploy
-# Build para produção
+### Build para produção
 npm run build
 
-# Deploy no Firebase
+### Deploy no Firebase
 firebase deploy
 
 # LER ARQUIVO GUIA DE DEPLOY.MD                           
 
                 
-# 🔒 Segurança
+### 🔒 Segurança
 Regras de Segurança do Firestore
 
 ```
@@ -140,14 +150,14 @@ service cloud.firestore {
                         
                     
                 
-# 📈 Monitoramento
+### 📈 Monitoramento
 Ferramentas
 
 Firebase Performance Monitoring
 Firebase Crashlytics
 Custom Error Tracking
 
-# 🔮 Roadmap Futuro / Atualizações
+### 🔮 Roadmap Futuro / Atualizações
 
 Modo Offline
 Sincronização entre dispositivos
@@ -156,7 +166,7 @@ Integração com calendários externos
 Tema personalizado
 Exportação/Importação de tarefas
 
-# 👥 Contribuição
+## 👥 Contribuição
 Como Contribuir
 
 **Faça fork do repositório** 
@@ -164,10 +174,10 @@ Como Contribuir
 **Commit suas alterações**
 **Abra um Pull Request**
 
-# 📄 Licença
+### 📄 Licença
 MIT License
 
-# 🚀 Tecnologias Principais
+### 🚀 Tecnologias Principais
 
 React 18
 TypeScript
