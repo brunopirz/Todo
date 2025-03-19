@@ -1,0 +1,38 @@
+microsoft-todo-clone/
+│
+├── frontend/                # Aplicação React
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   ├── services/
+│   │   ├── styles/
+│   │   ├── types/
+│   │   ├── utils/
+│   │   ├── App.tsx
+│   │   └── index.tsx
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── backend/                 # Servidor NestJS
+│   ├── src/
+│   │   ├── modules/
+│   │   ├── common/
+│   │   ├── config/
+│   │   ├── interceptors/
+│   │   ├── guards/
+│   │   └── main.ts
+│   ├── test/
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── .github/                 # Workflows CI/CD
+│   └── workflows/
+│       ├── frontend-ci.yml
+│       └── backend-ci.yml
+│
+├── docs/                    # Documentação
+│
+├── README.md
+└── .env.example
