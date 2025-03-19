@@ -1,11 +1,8 @@
-# Todo
-a clean and open source task manager
+# To-do
+A clean and open source task manager
 
-🚀 Vou criar uma documentação técnica detalhada para o projeto Microsoft TODO Clone.
-📘 Microsoft TODO Clone - Documentação Técnica
-🎯 Visão Geral do Projeto
-Objetivo
-Desenvolver um clone funcional do Microsoft TODO com recursos avançados de gerenciamento de tarefas e sincronização em tempo real.
+# 🎯 Visão Geral do Projeto
+
 🏗️ Arquitetura do Sistema
 Visão Arquitetural
 
@@ -27,8 +24,6 @@ graph TD
     E --> G[Serviços de Dados]
 
                     
-                        
-                    
                 
 🔐 Modelo de Autenticação
 Fluxo de Autenticação
@@ -38,31 +33,23 @@ Validação no Firebase Authentication
 Criação/Recuperação de perfil de usuário
 Geração de token JWT
 Autorização baseada em regras do Firestore
+Registro de novo usuário
+Recuperação de senha
+Logout
 
 Tipos de Usuário
 
 Usuário Padrão: Acesso completo às próprias listas e tarefas
 Usuário Convidado: Acesso limitado (implementação futura)
 
-
-                    
-                
-🚀 Principais Funcionalidades
-Autenticação
-
-Login com Google
-Registro de novo usuário
-Recuperação de senha
-Logout
-
-Gerenciamento de Listas
+# Gerenciamento de Listas
 
 Criar listas personalizadas
 Editar listas
 Excluir listas
 Listas padrão (Meu Dia, Importante, Planejado)
 
-Gerenciamento de Tarefas
+# Gerenciamento de Tarefas
 
 Criar tarefas
 Editar tarefas
@@ -72,7 +59,7 @@ Definir data de vencimento
 Adicionar lembretes
 Marcar como importante
 
-🔧 Configuração do Ambiente
+# 🔧 Configuração do Ambiente
 Variáveis de Ambiente
 Arquivo .env:
 
