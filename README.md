@@ -29,24 +29,35 @@ graph TD
 Fluxo de Autenticação
 
 Login com Google
+
 Validação no Firebase Authentication
+
 Criação/Recuperação de perfil de usuário
+
 Geração de token JWT
+
 Autorização baseada em regras do Firestore
+
 Registro de novo usuário
+
 Recuperação de senha
+
 Logout
 
-Tipos de Usuário
+**Tipos de Usuário:**
 
 Usuário Padrão: Acesso completo às próprias listas e tarefas
+
 Usuário Convidado: Acesso limitado (implementação futura)
 
 ## Gerenciamento de Listas
 
 Criar listas personalizadas
+
 Editar listas
+
 Excluir listas
+
 Listas padrão (Meu Dia, Importante, Planejado)
 
 ## Gerenciamento de Tarefas
@@ -112,7 +123,7 @@ npm run test:coverage
 ```
 
                     
-##🚢 Deploy
+## 🚢 Deploy
 Plataformas Suportadas
 
 Firebase Hosting
@@ -120,6 +131,7 @@ Vercel
 Netlify
 
 Comandos de Deploy
+
 ### Build para produção
 npm run build
 
@@ -187,5 +199,7 @@ Material-UI
 Jest
 React Testing Library
 
+
 contato@brunopira.com.br
+
 @brunopira
