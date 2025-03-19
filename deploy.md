@@ -1,7 +1,6 @@
-🚀 Vou criar um guia completo para configuração de ambiente de produção e deploy no Firebase.
-🌐 Guia de Deploy: Microsoft TODO Clone no Firebase
-📋 Pré-Requisitos
-Ferramentas Necessárias
+# 🌐 Guia de Deploy: TODO no Firebase
+
+##Ferramentas Necessárias
 
 Node.js (v18+)
 npm ou yarn
@@ -9,27 +8,27 @@ Firebase CLI
 Conta no Firebase
 Conta no GitHub (opcional, para CI/CD)
 
-🔧 Configuração Inicial
+## 🔧 Configuração Inicial
 1. Instalar Firebase CLI
-# Instalar Firebase CLI globalmente
+Instalar Firebase CLI globalmente
+```
 npm install -g firebase-tools
-
-                    
+```                  
                         
                     
                 
-2. Autenticar no Firebase
-# Fazer login no Firebase
+## 2. Autenticar no Firebase
+Fazer login no Firebase
 firebase login
 
-# Verificar login
+## Verificar login
 firebase projects:list
 
                     
                         
                     
                 
-🚀 Configuração do Projeto Firebase
+##🚀 Configuração do Projeto Firebase
 Criar Novo Projeto
 
 Acesse Console Firebase
@@ -58,23 +57,24 @@ Hosting
 Console Firebase > Hosting
 Preparar para deploy
 
-🔐 Configurações de Ambiente
+## 🔐 Configurações de Ambiente
 Variáveis de Ambiente de Produção
-.env.production
+
+**.env.production**
+
+```
 REACT_APP_FIREBASE_API_KEY=seu_api_key_producao
 REACT_APP_FIREBASE_AUTH_DOMAIN=seu_projeto.firebaseapp.com
 REACT_APP_FIREBASE_PROJECT_ID=seu_project_id
 REACT_APP_FIREBASE_STORAGE_BUCKET=seu_storage_bucket
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=seu_messaging_sender_id
 REACT_APP_FIREBASE_APP_ID=seu_app_id
-
+```
                     
-                        
-                    
-                
-📦 Preparar Projeto para Deploy
+## 📦 Preparar Projeto para Deploy
 Configuração Firebase no Projeto
 firebase.json
+```
 {
   "hosting": {
     "public": "build",
@@ -94,37 +94,37 @@ firebase.json
     "rules": "firestore.rules"
   }
 }
-
+```
                     
                         
-                    
-                
+```    
 .firebaserc
 {
   "projects": {
     "default": "seu-project-id"
   }
 }
-
+```
                     
                         
                     
                 
-Script de Build
+**Script de Build**
 package.json
+
+```
 {
   "scripts": {
     "build": "react-scripts build",
     "deploy": "npm run build && firebase deploy"
   }
 }
-
+```
                     
                         
-                    
-                
 🔒 Regras de Segurança do Firestore
-firestore.rules
+**firestore.rules**
+```
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -141,33 +141,40 @@ service cloud.firestore {
     }
   }
 }
-
+```
                     
-                        
-                    
+                  
                 
-🚢 Deploy Manual
+### 🚢 Deploy Manual
 Passos de Deploy
-# Build do projeto
+Build do projeto
+```
 npm run build
+```
 
-# Login no Firebase
+### Login no Firebase
+```
 firebase login
+```
 
-# Selecionar projeto
+### Selecionar projeto
+```
 firebase use seu-project-id
+```
 
-# Deploy
+### Deploy
+```
 firebase deploy
-
+```
                     
                         
                     
                 
 🤖 Configuração CI/CD com GitHub Actions
 .github/workflows/firebase-deploy.yml
-name: Firebase Deploy
+**name: Firebase Deploy**
 
+```
 on:
   push:
     branches:
@@ -201,17 +208,16 @@ jobs:
         args: deploy --only hosting
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-
+```
                     
                         
                     
                 
-Gerar Token de Deploy
-# Gerar token de deploy
+**Gerar Token de Deploy**
+```
 firebase login:ci
-
+```
                     
-                        
                     
                 
 Configurar Secrets no GitHub
@@ -223,7 +229,7 @@ FIREBASE_TOKEN
 Variáveis de ambiente
 
 
-📈 Monitoramento
+###📈 Monitoramento
 Firebase Performance
 
 Habilitar no Console Firebase
@@ -262,6 +268,3 @@ Checar permissões de usuário
 
 Documentação Firebase Hosting
 Guia Firebase React
-
-
-Quer que eu detalhe alguma parte específica ou tire alguma dúvida sobre o processo de deploy? 🤔🚀
