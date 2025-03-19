@@ -20,16 +20,6 @@ Estilização: Material-UI
 
 Testes: Jest + React Testing Library
 
-Diagrama de Arquitetura
-graph TD
-    A[Usuário] --> B[Interface React]
-    B --> C[Redux Store]
-    C --> D[Firebase Authentication]
-    C --> E[Firestore]
-    D --> F[Serviços de Autenticação]
-    E --> G[Serviços de Dados]
-
-                    
                 
 ## 🔐 Modelo de Autenticação
 Fluxo de Autenticação
