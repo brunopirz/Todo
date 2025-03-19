@@ -62,18 +62,18 @@ Marcar como importante
 # 🔧 Configuração do Ambiente
 Variáveis de Ambiente
 Arquivo .env:
-
-```REACT_APP_FIREBASE_API_KEY=
+```
+REACT_APP_FIREBASE_API_KEY=
 REACT_APP_FIREBASE_AUTH_DOMAIN=
 REACT_APP_FIREBASE_PROJECT_ID=
 REACT_APP_FIREBASE_STORAGE_BUCKET=
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=
-REACT_APP_FIREBASE_APP_ID=```
-
+REACT_APP_FIREBASE_APP_ID=
+```
                  
-Instalação
+# Instalação
 # Clonar repositório
-git clone https://github.com/seu-usuario/microsoft-todo-clone.git
+```git clone https://github.com/seu-usuario/microsoft-todo-clone.git```
 
 # Instalar dependências
 cd todo
@@ -86,7 +86,7 @@ npm install
 ```npm start```
 
                 
-🧪 Estratégia de Testes
+#🧪 Estratégia de Testes
 Tipos de Testes
 
 Testes Unitários (Jest)
@@ -102,7 +102,7 @@ Comandos de Teste
 ```npm run test:coverage```
 
                     
-🚢 Deploy
+#🚢 Deploy
 Plataformas Suportadas
 
 Firebase Hosting
@@ -115,12 +115,15 @@ npm run build
 
 # Deploy no Firebase
 firebase deploy
-                                                              
+
+# LER ARQUIVO GUIA DE DEPLOY.MD                           
+
                 
-🔒 Segurança
+# 🔒 Segurança
 Regras de Segurança do Firestore
 
-```rules_version = '2';
+```
+rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /users/{userId}/{document=**} {
@@ -131,20 +134,20 @@ service cloud.firestore {
       allow read, update, delete: if request.auth.uid == resource.data.userId;
     }
   }
-}```
-
+}
+```
                     
                         
                     
                 
-📈 Monitoramento
+# 📈 Monitoramento
 Ferramentas
 
 Firebase Performance Monitoring
 Firebase Crashlytics
 Custom Error Tracking
 
-🔮 Roadmap Futuro
+# 🔮 Roadmap Futuro / Atualizações
 
 Modo Offline
 Sincronização entre dispositivos
@@ -153,18 +156,18 @@ Integração com calendários externos
 Tema personalizado
 Exportação/Importação de tarefas
 
-👥 Contribuição
+# 👥 Contribuição
 Como Contribuir
 
-Faça fork do repositório
-Crie branch feature
-Commit suas alterações
-Abra um Pull Request
+**Faça fork do repositório** 
+**Crie branch feature**
+**Commit suas alterações**
+**Abra um Pull Request**
 
-📄 Licença
+# 📄 Licença
 MIT License
 
-🚀 Tecnologias Principais
+# 🚀 Tecnologias Principais
 
 React 18
 TypeScript
