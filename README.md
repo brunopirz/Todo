@@ -85,7 +85,7 @@ REACT_APP_FIREBASE_APP_ID=
 ## Instalação
 **Clonar repositório**
 ```
-git clone https://github.com/seu-usuario/microsoft-todo-clone.git
+git clone https://github.com/brunopirz/Todo.git
 ```
 
 ## Instalar dependências
