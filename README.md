@@ -7,11 +7,17 @@ A clean and open source task manager
 Visão Arquitetural
 
 Frontend: React 18 + TypeScript
+
 Backend: Serverless Firebase
+
 Autenticação: Firebase Authentication
+
 Banco de Dados: Firestore
+
 Gerenciamento de Estado: Redux Toolkit
+
 Estilização: Material-UI
+
 Testes: Jest + React Testing Library
 
 Diagrama de Arquitetura
